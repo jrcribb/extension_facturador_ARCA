@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es"><meta charset="utf-8"><title>Factura C · ARCA</title>
+<link rel="stylesheet" href="popup.css">
+<main>
+<header><h1>Factura C</h1><span>ARCA · 1.5.1</span></header>
+<p class="summary">Consumidor final · Contado<br>Productos y Servicios · Detalle: Servicios</p>
+<section class="destination">
+<p id="targetStatus">Buscando RCEL…</p>
+<select id="targetTab" aria-label="Pestaña RCEL" hidden></select>
+<div class="target-actions"><button id="refreshTabs" type="button">Actualizar</button><button id="goToRcel" type="button">Ir a RCEL</button></div>
+</section>
+<form id="form">
+<label for="amount">Importe total · ARS</label>
+<input id="amount" placeholder="0,00" required inputmode="decimal" autocomplete="off" disabled>
+<p id="dates" class="muted"></p>
+<label class="option"><input id="autoIssue" type="checkbox" disabled><span>No aguardar confirmación</span></label>
+<p id="mode" class="muted">Cargando configuración…</p>
+<button type="submit" disabled>Preparar hasta revisión</button>
+<button type="button" id="clear">Detener y borrar importe</button>
+</form>
+<p role="status" id="status" aria-live="polite"></p>
+<details><summary>Cómo usar</summary><p>Podés iniciar desde cualquier pestaña. Dejá RCEL abierto en su menú principal; si hay varias pestañas, elegí cuál usar. La opción marcada autoriza emitir sin revisión final y queda guardada. Después de emitir se avisa, se vuelve al menú y el importe queda vacío.</p></details>
+</main><script type="module" src="popup.js"></script></html>

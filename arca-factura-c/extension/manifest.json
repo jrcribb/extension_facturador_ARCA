@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "ARCA · Preparar Factura C",
+  "version": "1.5.1",
+  "description": "Asistente independiente para Factura C en RCEL: preparación, emisión opcional y aviso. No es una extensión oficial de ARCA.",
+  "permissions": [
+    "scripting",
+    "storage",
+    "notifications"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    },
+    "default_title": "Preparar Factura C en RCEL"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "host_permissions": [
+    "https://fe.afip.gob.ar/*",
+    "https://fe.arca.gob.ar/*"
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

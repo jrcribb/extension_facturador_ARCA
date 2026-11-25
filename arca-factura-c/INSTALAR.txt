@@ -1,0 +1,7 @@
+INSTALACIÓN
+
+Extraer este ZIP. Abrir chrome://extensions, activar Modo de desarrollador, pulsar Cargar descomprimida y elegir extension. Mantener esa carpeta. Anclar el ícono desde el menú de extensiones.
+
+Abrir la propia sesión RCEL, elegir contribuyente y dejar el menú principal. Desde cualquier pestaña, abrir la extensión e ingresar importe. La opción No aguardar confirmación emite realmente; dejarla desmarcada para revisar antes de emitir.
+
+Herramienta independiente, no oficial de ARCA. No compartir Clave Fiscal. Cada destinatario utiliza su propia sesión y autorización. Actualizaciones manuales reemplazando archivos y pulsando Recargar.
